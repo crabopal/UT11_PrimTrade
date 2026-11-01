@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="4b7bbd11-6bf5-4c5f-8120-212684da5cc0">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КлеверенсТСД_ОсновнаяОбработка" category="Object">
+				<xr:TypeId>48833dfc-34d4-450b-b934-b8e52e6b0872</xr:TypeId>
+				<xr:ValueId>1e5c9801-72eb-43fa-93db-a95c830022b4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КлеверенсТСД_ОсновнаяОбработка" category="Manager">
+				<xr:TypeId>fa527f7a-1e24-4d03-929b-b095e1b2be44</xr:TypeId>
+				<xr:ValueId>90ca241a-dcc7-4e43-bb68-d42ad1535dac</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КлеверенсТСД_ОсновнаяОбработка</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клеверенс ТСД: основная обработка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Cleverence мобільний пристрій: основна обробка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cleverence Mobile Device: Basic processing</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>Cleverence მობილური მოწყობილობა: ძირითადი დამუშავება</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Cleverence мобильді құрылғы: негізгі өңдеу</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Cleverence mobil qurilmasi: asosiy ishlov berish</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Cleverence мабільнае прылада: асноўная апрацоўка</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Cleverence Mobil cihaz: temel işlem</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Cleverence dispositivo Móvil: procesamiento principal</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Dispozitiv mobil Cleverence: procesare de bază</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.КлеверенсТСД_ОсновнаяОбработка.Form.ГлавнаяФорма</DefaultForm>
+			<AuxiliaryForm>DataProcessor.КлеверенсТСД_ОсновнаяОбработка.Form.ГлавнаяФорма</AuxiliaryForm>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="c492dc89-66c1-40af-b194-1e2b2a40eec0">
+				<Properties>
+					<Name>ЭтоWebСервис</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это web сервис</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Це web сервіс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>This is a web service</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ka</v8:lang>
+							<v8:content>ეს არის ვებ სერვისი</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>kk</v8:lang>
+							<v8:content>Бұл веб қызмет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uz</v8:lang>
+							<v8:content>Bu veb-xizmat</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>be</v8:lang>
+							<v8:content>Гэта web сэрвіс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Bu bir web hizmetidir</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es</v8:lang>
+							<v8:content>Es un Servicio web</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ro</v8:lang>
+							<v8:content>Acesta este un serviciu web</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a854d01e-a62e-4fea-b834-cc9d63cd327c">
+				<Properties>
+					<Name>COMЧастнойБазыMS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>COMЧастной базы Клеверенс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>The Cleverence Partial database</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>kk</v8:lang>
+							<v8:content>Cleverence қосалқы базасы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uz</v8:lang>
+							<v8:content>Cleverence xususiy bazasi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>be</v8:lang>
+							<v8:content>СОМЧастной базы Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>СОМЧастной бази Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ka</v8:lang>
+							<v8:content>Cleverence ნაწილობრივი მონაცემთა ბაზა</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Cleverence'ın özel üssünün</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es</v8:lang>
+							<v8:content>Base privada Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ro</v8:lang>
+							<v8:content>Baza de date parțială Cleverence</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4c83b7fa-c58a-45c2-9891-209d18596da2">
+				<Properties>
+					<Name>COMВременнойБазыMS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>COMВременной базы Клеверенс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Co-modern database of Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>kk</v8:lang>
+							<v8:content>Сомкleverence уақытша базасы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uz</v8:lang>
+							<v8:content>Cleverence vaqt bazasi</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>be</v8:lang>
+							<v8:content>СОМВременной базы Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сомчасової бази Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ka</v8:lang>
+							<v8:content>კლევერენციის თანა-თანამედროვე მონაცემთა ბაზა</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Komzaman temel Zekası</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es</v8:lang>
+							<v8:content>Base temporal Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ro</v8:lang>
+							<v8:content>Baza de date Co-modernă a Cleverence</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="73be0a0f-545a-4232-803b-5cf6e8e17134">
+				<Properties>
+					<Name>COMБазыMS</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>COMБазы Клеверенс</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Cleverence Sombases</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>kk</v8:lang>
+							<v8:content>Cleverence Сомбазалары</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uz</v8:lang>
+							<v8:content>Cleverence Sombazlari</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>be</v8:lang>
+							<v8:content>СОМБазы Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>uk</v8:lang>
+							<v8:content>Сомбази Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ka</v8:lang>
+							<v8:content>კლევერენციის სომბაზები</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Sombazalar Zekice</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>es</v8:lang>
+							<v8:content>Sombase Cleverence</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ro</v8:lang>
+							<v8:content>Cleverence Sombases</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type/>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+				</Properties>
+			</Attribute>
+			<Form>ГлавнаяФорма</Form>
+			<Form>ЛокальныйКонтекст</Form>
+			<Form>ОбменДокументами</Form>
+			<Form>ФормаСписка_БизнесПроцессы</Form>
+			<Form>ФормаСписка_ГлобальныеПараметры</Form>
+			<Form>ФормаСписка_ОтборыДокументов</Form>
+			<Form>ФормаСписка_ОтборыСправочников</Form>
+			<Form>ФормаСписка_ПодключенныеБазыMS</Form>
+			<Form>ФормаСписка_ПроизвольныеКоды</Form>
+			<Form>ФормаСписка_ПроизвольныеОтборыДокументов</Form>
+			<Form>ФормаСписка_ТаймаутыИПорции</Form>
+			<Form>ФормаСписка_Узлы</Form>
+			<Form>ФормаНастроек_РасширенныеНастройки</Form>
+			<Form>ФормаНастройки_БизнесПроцесс</Form>
+			<Form>ФормаНастройки_ВыгрузкаПользователей</Form>
+			<Form>ФормаНастройки_ОтборДокументов</Form>
+			<Form>ФормаНастройки_ОтборСправочников</Form>
+			<Form>ФормаНастройки_ПечатьЭтикеток</Form>
+			<Form>ФормаНастройки_ПоследовательностьБизнесПроцессов</Form>
+			<Form>ФормаНастройки_ПравилаВыгрузкиПолей</Form>
+			<Form>ФормаНастройки_ПравилаВыгрузкиТЧ</Form>
+			<Form>ФормаНастройки_ПравилаЗагрузкиПолей</Form>
+			<Form>ФормаНастройки_ПравилаЗагрузкиТЧ</Form>
+			<Form>ФормаНастройки_ПредставленияРеквизитовДокумента</Form>
+			<Form>ФормаНастройки_ПроизвольныйКод</Form>
+			<Form>ФормаНастройки_ПроизвольныйОтборДокументов</Form>
+			<Form>ФормаНастройки_СвязиВыгрузкиТЧ</Form>
+			<Form>ФормаНастройки_Узел</Form>
+			<Form>ФормаНастройки_УсловияУдаленияСтрокТЧ</Form>
+			<Form>ФормаПросмотра_ДокументMS</Form>
+			<Form>ФормаПросмотра_РазделДокументаMS</Form>
+			<Form>ФормаСлужебная_АвторизацииSMARTS</Form>
+			<Form>ФормаСлужебная_ВводЗначенийЗаполнения</Form>
+			<Form>ФормаСлужебная_ВводПинКода</Form>
+			<Form>ФормаСлужебная_ВосстановлениеДокументовSMARTS</Form>
+			<Form>ФормаСлужебная_ВыборДокументаДляЗагрузки</Form>
+			<Form>ФормаСлужебная_ВыборКолонок</Form>
+			<Form>ФормаСлужебная_ВыборКолонокSMARTS</Form>
+			<Form>ФормаСлужебная_ВыборНазначенияВыгрузки</Form>
+			<Form>ФормаСлужебная_ВыборПользователяИлиГруппы</Form>
+			<Form>ФормаСлужебная_ВыборСтрокиИзТаблицы</Form>
+			<Form>ФормаСлужебная_ЗагрузкаНовыхШтрихкодов</Form>
+			<Form>ФормаСлужебная_ИмпортПользователейИз1С</Form>
+			<Form>ФормаСлужебная_ИмпортЭкспортНастроек</Form>
+			<Form>ФормаСлужебная_МножественныйВыборИзСписка</Form>
+			<Form>ФормаСлужебная_НастройкиОбработки</Form>
+			<Form>ФормаСлужебная_НастройкиПодключения</Form>
+			<Form>ФормаСлужебная_ОбщаяСлужебная</Form>
+			<Form>ФормаСлужебная_ОтправитьОтчетОбОшибках</Form>
+			<Form>ФормаСлужебная_ПодборПользователей1С</Form>
+			<Form>ФормаСлужебная_ПолеHTMLДокумента</Form>
+			<Form>ФормаСлужебная_ПросмотрВсехНастроек</Form>
+			<Form>ФормаСлужебная_РедактированиеТекстаЗапроса</Form>
+			<Form>ФормаСлужебная_СозданиеГруппыПользователей</Form>
+			<Form>ФормаСлужебная_СозданиеПользователя</Form>
+			<Template>__________ОбщиеМакеты</Template>
+			<Template>ОписаниеПеременныхДляПроизвольныхКодов</Template>
+			<Template>ЭтикеткаНоменклатура</Template>
+			<Template>ЭтикеткаСерия</Template>
+			<Template>ЭтикеткаЯчейка</Template>
+			<Template>ЭтикеткаЦена</Template>
+			<Template>DeviceState</Template>
+			<Template>ЭтикеткаДляИнвентаризации</Template>
+			<Template>HTMLСтраницаПодключенияТСД</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

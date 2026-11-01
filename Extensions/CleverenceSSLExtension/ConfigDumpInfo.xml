@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.Пользователи" id="bb51bda2-0098-4e57-9469-312f6b2f9c99" configVersion="6e792edd376150706fda6b73a529b61301685e87"/>
+		<Metadata name="CommonModule.ВерсионированиеОбъектов" id="d38c3696-110e-4abb-b264-29f9e66450cb" configVersion="983d0fb4e6f611b1e75b7288e2ee175fd9d55558"/>
+		<Metadata name="CommonModule.ВерсионированиеОбъектов.Module" id="d38c3696-110e-4abb-b264-29f9e66450cb.0" configVersion="262be8a951279328dddc6bb643bba707f6614944"/>
+		<Metadata name="CommonModule.ПодключаемыеКоманды" id="8d954da9-c0b2-4567-8f09-e0d8c02c3b47" configVersion="8905b240cf3077777d77273d5d7861eb12fa1665"/>
+		<Metadata name="CommonModule.ПодключаемыеКоманды.Module" id="8d954da9-c0b2-4567-8f09-e0d8c02c3b47.0" configVersion="43179a0c5a57cfe6fe7d4abff88b1716dfadd50c"/>
+		<Metadata name="CommonModule.ПодключаемыеКомандыКлиент" id="d9330a01-c476-4e6c-bad0-958da82c6f43" configVersion="2dc225c35f3131a35ad682870d8f1736af4f01da"/>
+		<Metadata name="CommonModule.ПодключаемыеКомандыКлиент.Module" id="d9330a01-c476-4e6c-bad0-958da82c6f43.0" configVersion="29baaae577ef57a2cb372da1bbbbea64b45fd871"/>
+		<Metadata name="CommonPicture.Папка" id="6c89a555-f56d-4f48-90a6-7190c519b1f1" configVersion="666591841c985da0efe11070692d0812a45b61ff"/>
+		<Metadata name="Configuration.CleverenceSSLExtension" id="3df23111-e059-4fa6-99e4-0ca283ee4206" configVersion="8ddf33407729faad882e18ff552a4aa5b533caaa"/>
+		<Metadata name="Configuration.CleverenceSSLExtension.Logo" id="efb0b789-7976-409f-9733-5187f1095299.1" configVersion="e87103da0307b48fbe53525d115fa274b108d304"/>
+		<Metadata name="Configuration.CleverenceSSLExtension.ManagedApplicationModule" id="efb0b789-7976-409f-9733-5187f1095299.6" configVersion="a696e495de415e8a42ec04a7575f62e38c734ab9"/>
+		<Metadata name="DataProcessor.ОбновлениеПрограммы" id="facee3f1-28df-433e-9ced-44b07f7d71a2" configVersion="da27c50916ab12bf08efb89cf4837ab5348c1390"/>
+		<Metadata name="DataProcessor.ОбновлениеПрограммы.Form.Форма" id="07d77f01-0aa7-49da-870c-d903097f7fb7" configVersion="02e2b03e4dff444e02a56eaa3d92717fa3351f5b"/>
+		<Metadata name="DataProcessor.ОбновлениеПрограммы.Form.Форма.Form" id="07d77f01-0aa7-49da-870c-d903097f7fb7.0" configVersion="6f086867b967e4968f6c5818092281a3cdaf93ab"/>
+		<Metadata name="StyleItem.ЦветФонаПредупреждения" id="9f6be37b-359e-4a5e-aa5a-6dd5a9f221c6" configVersion="41b0468e63558ec92b994c8d2dc4380b81697d85"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

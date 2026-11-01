@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Ячейки</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Name</dataPath>
+			<field>Name</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Id_GUID</dataPath>
+			<field>Id_GUID</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка - ячейка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Barcode</dataPath>
+			<field>Barcode</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Barcode</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Description</dataPath>
+			<field>Description</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>NotSelectable</dataPath>
+			<field>NotSelectable</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Not selectable</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>IsGroup</dataPath>
+			<field>IsGroup</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это группа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ParentId_GUID</dataPath>
+			<field>ParentId_GUID</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка - родитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СкладскиеЯчейки.Код КАК Код,
+	"                                       " КАК Штрихкод,  // 39 символов, т.к. в это поле будет записываться числовой код по ссылке
+	СкладскиеЯчейки.Ссылка КАК Ссылка,
+	СкладскиеЯчейки.Наименование КАК Наименование,
+	СкладскиеЯчейки.ЭтоГруппа КАК ЭтоГруппа,
+	СкладскиеЯчейки.Родитель КАК Родитель,
+	ВЫБОР
+		КОГДА СкладскиеЯчейки.Помещение = ЗНАЧЕНИЕ(Справочник.СкладскиеПомещения.ПустаяСсылка)
+			ТОГДА СкладскиеЯчейки.Владелец
+		ИНАЧЕ СкладскиеЯчейки.Помещение
+	КОНЕЦ КАК СкладПомещение
+ПОМЕСТИТЬ ВТ_Ячейки
+ИЗ
+	Справочник.СкладскиеЯчейки КАК СкладскиеЯчейки
+ГДЕ
+	НЕ СкладскиеЯчейки.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Ячейки.Код КАК Name,
+	ВТ_Ячейки.Штрихкод КАК Barcode,
+	ВТ_Ячейки.Ссылка КАК Id_GUID,
+	ВТ_Ячейки.Наименование КАК Description,
+	ВТ_Ячейки.ЭтоГруппа КАК IsGroup,
+	ВТ_Ячейки.ЭтоГруппа КАК NotSelectable,
+	ВЫБОР
+		КОГДА ВТ_Ячейки.Родитель = ЗНАЧЕНИЕ(Справочник.СкладскиеЯчейки.ПустаяСсылка)
+			ТОГДА ВТ_Ячейки.СкладПомещение
+		ИНАЧЕ ВТ_Ячейки.Родитель
+	КОНЕЦ КАК ParentId_GUID
+ИЗ
+	ВТ_Ячейки КАК ВТ_Ячейки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Склады.Наименование,
+	"",
+	Склады.Ссылка,
+	Склады.Наименование,
+	ИСТИНА,
+	ИСТИНА,
+	""
+ИЗ
+	Справочник.Склады КАК Склады
+ГДЕ
+	Склады.Ссылка В
+			(ВЫБРАТЬ
+				ВТ_Ячейки.СкладПомещение КАК Ссылка
+			ИЗ
+				ВТ_Ячейки КАК ВТ_Ячейки)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СкладскиеПомещения.Наименование,
+	"",
+	СкладскиеПомещения.Ссылка,
+	СкладскиеПомещения.Наименование,
+	ИСТИНА,
+	ИСТИНА,
+	""
+ИЗ
+	Справочник.СкладскиеПомещения КАК СкладскиеПомещения
+ГДЕ
+	СкладскиеПомещения.Ссылка В
+			(ВЫБРАТЬ
+				ВТ_Ячейки.СкладПомещение КАК Ссылка
+			ИЗ
+				ВТ_Ячейки КАК ВТ_Ячейки)</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Name</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Barcode</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Id_GUID</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Description</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>IsGroup</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>NotSelectable</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ParentId_GUID</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Id_GUID</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

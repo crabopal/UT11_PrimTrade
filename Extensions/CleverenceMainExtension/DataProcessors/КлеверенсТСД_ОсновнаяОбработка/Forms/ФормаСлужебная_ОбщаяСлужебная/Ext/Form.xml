@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Клеверенс: Служебная форма</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="СтраницаПереносНастроек" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Перенос настроек</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница перенос настроек</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПереносНастроекРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="ПереносНастроекЗаголовок" id="5">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Переносит настройки между файлами &lt;color #bc67bc&gt;CustomSettings.xml&lt;/&gt; и &lt;color #536ac2&gt;CustomSettings.dflt.xml&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПереносНастроекЗаголовокКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ПереносНастроекЗаголовокРасширеннаяПодсказка" id="7"/>
+						</LabelDecoration>
+						<LabelDecoration name="ПереносНастроекОписание" id="8">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>- При переносе значение в источнике очищается и записывается в файл-приёмник.
+- Настройки переносятся целыми ключами, без объединения с значением приемника.
+&lt;color #af0000&gt;- При переносе бизнес-процессов: удаляются дублирующиеся и неиспользуемые поля. &lt;/&gt;
+&lt;color #af0000&gt;- Рекомендуется использовать на файлах настроек начиная с 2.1.0.1 ВерсияНастроек в БП&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПереносНастроекОписаниеКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ПереносНастроекОписаниеРасширеннаяПодсказка" id="10"/>
+						</LabelDecoration>
+						<CheckBoxField name="УдалятьИзИсточника" id="11">
+							<DataPath>УдалятьИзИсточника</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалять ключи перенесенных настроек в файле источнике</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При включённой настройке перенесённые ключи будут удаляться в файле-источнике, чтобы избежать дублирования настроек в файлах.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УдалятьИзИсточникаКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="УдалятьИзИсточникаРасширеннаяПодсказка" id="13"/>
+						</CheckBoxField>
+						<LabelDecoration name="Разделитель3" id="14">
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="10"/>
+							<ContextMenu name="Разделитель3КонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="Разделитель3РасширеннаяПодсказка" id="16"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПутиФайлов" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пути файлов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пути файлов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПутиФайловРасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<InputField name="ПутьCustomSettings" id="19">
+									<DataPath>ПутьCustomSettings</DataPath>
+									<TitleTextColor>#BC67BC</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПутьCustomSettingsКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ПутьCustomSettingsРасширеннаяПодсказка" id="21"/>
+									<Events>
+										<Event name="StartChoice">ПутьCustomSettingsНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаКнопкиПереноса" id="22">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки переноса</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки переноса</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиПереносаРасширеннаяПодсказка" id="23"/>
+									<ChildItems>
+										<Button name="ПереносНастроекВТиповые" id="24">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ПереносНастроекВТиповые</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.MoveRight</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>в типовые</v8:content>
+												</v8:item>
+											</Title>
+											<PictureLocation>Right</PictureLocation>
+											<ExtendedTooltip name="ПереносНастроекВТиповыеРасширеннаяПодсказка" id="25"/>
+										</Button>
+										<Button name="ПереносНастроекВПользовательские" id="26">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ПереносНастроекВПользовательские</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>в пользв..</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПереносНастроекВПользовательскиеРасширеннаяПодсказка" id="27"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ПутьCustomSettingsDflt" id="28">
+									<DataPath>ПутьCustomSettingsDflt</DataPath>
+									<TitleTextColor>#536AC2</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<TitleLocation>Top</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПутьCustomSettingsDfltКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ПутьCustomSettingsDfltРасширеннаяПодсказка" id="30"/>
+									<Events>
+										<Event name="StartChoice">ПутьCustomSettingsDfltНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Разделитель6" id="31">
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="10"/>
+							<ContextMenu name="Разделитель6КонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="Разделитель6РасширеннаяПодсказка" id="33"/>
+						</LabelDecoration>
+						<LabelDecoration name="ИменаНастроекЗаголовок" id="34">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Соответствие имен ключей  &lt;color #bc67bc&gt;пользовательские&lt;/&gt; / &lt;color #536ac2&gt;типовые&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИменаНастроекЗаголовокКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ИменаНастроекЗаголовокРасширеннаяПодсказка" id="36"/>
+						</LabelDecoration>
+						<LabelDecoration name="ИменаНастроекОписание" id="37">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Добавьте и включите имена ключей, которые необходимо перенести.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИменаНастроекОписаниеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ИменаНастроекОписаниеРасширеннаяПодсказка" id="39"/>
+						</LabelDecoration>
+						<Table name="ИменаНастроек" id="40">
+							<Representation>List</Representation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>100</MaxWidth>
+							<HeightControlVariant>UseContentHeight</HeightControlVariant>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ИменаНастроек</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИменаНастроекКонтекстноеМеню" id="41"/>
+							<AutoCommandBar name="ИменаНастроекКоманднаяПанель" id="42">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<ButtonGroup name="ИменаНастроекГруппа1" id="110">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="ИменаНастроекГруппа1РасширеннаяПодсказка" id="111"/>
+										<ChildItems>
+											<Button name="СнятьВсе" id="106">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Command.СнятьВсе</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="СнятьВсеРасширеннаяПодсказка" id="107"/>
+											</Button>
+											<Button name="ВыбратьВсе" id="108">
+												<Type>CommandBarButton</Type>
+												<Representation>Picture</Representation>
+												<CommandName>Form.Command.ВыбратьВсе</CommandName>
+												<Picture>
+													<xr:Ref>StdPicture.CheckAll</xr:Ref>
+													<xr:LoadTransparent>true</xr:LoadTransparent>
+												</Picture>
+												<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="109"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<Button name="ИменаНастроекДобавить" id="62">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ИменаНастроек.StandardCommand.Add</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ИменаНастроекДобавитьРасширеннаяПодсказка" id="63"/>
+									</Button>
+									<Button name="ИменаНастроекУдалить" id="64">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Item.ИменаНастроек.StandardCommand.Delete</CommandName>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ИменаНастроекУдалитьРасширеннаяПодсказка" id="65"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИменаНастроекРасширеннаяПодсказка" id="43"/>
+							<SearchStringAddition name="ИменаНастроекСтрокаПоиска" id="44">
+								<AdditionSource>
+									<Item>ИменаНастроек</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИменаНастроекСтрокаПоискаКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="ИменаНастроекСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИменаНастроекСостояниеПросмотра" id="47">
+								<AdditionSource>
+									<Item>ИменаНастроек</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИменаНастроекСостояниеПросмотраКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="ИменаНастроекСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИменаНастроекУправлениеПоиском" id="50">
+								<AdditionSource>
+									<Item>ИменаНастроек</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИменаНастроекУправлениеПоискомКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ИменаНастроекУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ИменаНастроекИспользовать" id="73">
+									<DataPath>ИменаНастроек.Использовать</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИменаНастроекИспользоватьКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ИменаНастроекИспользоватьРасширеннаяПодсказка" id="75"/>
+								</CheckBoxField>
+								<InputField name="ИменаНастроекИмяПользовательской" id="79">
+									<DataPath>ИменаНастроек.ИмяПользовательской</DataPath>
+									<TitleTextColor>#BC67BC</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИменаНастроекИмяПользовательскойКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ИменаНастроекИмяПользовательскойРасширеннаяПодсказка" id="81"/>
+								</InputField>
+								<InputField name="ИменаНастроекИмяТиповой" id="76">
+									<DataPath>ИменаНастроек.ИмяТиповой</DataPath>
+									<TitleTextColor>#536AC2</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИменаНастроекИмяТиповойКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ИменаНастроекИмяТиповойРасширеннаяПодсказка" id="78"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаАнализXML" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анализ файлов XML</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница анализ XML</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаАнализXMLРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<LabelDecoration name="АнализXMLЗаголовок" id="84">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Анализ файлов &lt;color #536ac2&gt;CustomSettings.dflt.xml&lt;/&gt; на корректность.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АнализXMLЗаголовокКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="АнализXMLЗаголовокРасширеннаяПодсказка" id="86"/>
+						</LabelDecoration>
+						<LabelDecoration name="АнализXMLОписание" id="90">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>- Проверяет все файлы .xml из выбранного каталога.
+- Выявляет дубли полей в выгрузке и загрузке шапки и ТЧ.
+- Алгоритм в ГлЯдро_АнализXML_ПроверитьCustomSettingsDflt можно редактировать для других проверок.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АнализXMLОписаниеКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="АнализXMLОписаниеРасширеннаяПодсказка" id="92"/>
+						</LabelDecoration>
+						<InputField name="КаталогФайлов" id="68">
+							<DataPath>КаталогФайлов</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КаталогФайловКонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="КаталогФайловРасширеннаяПодсказка" id="70"/>
+							<Events>
+								<Event name="StartChoice">КаталогФайловНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="ПроверитьФайлыНастроек" id="82">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверитьФайлыНастроек</CommandName>
+							<ExtendedTooltip name="ПроверитьФайлыНастроекРасширеннаяПодсказка" id="83"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбновлениеXML" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление CustomSettings.dflt</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обновление XML</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбновлениеXMLРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<LabelDecoration name="ОбновлениеXMLЗаголовок" id="100">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление &lt;color #536ac2&gt;CustomSettings.dflt.xml&lt;/&gt; под актуальную версию структуры настроек.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОбновлениеXMLЗаголовокКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="ОбновлениеXMLЗаголовокРасширеннаяПодсказка" id="102"/>
+						</LabelDecoration>
+						<LabelDecoration name="ОбновлениеXMLОписание" id="103">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>- Обновляет файл настроек до актуальной версии структуры настроек.
+- Работает как скрипт ОбновлениеCustomSettingsDflt
+
+- Обновляет НастройкиБизнесПроцессов_ПоУмолчанию
+- Обновляет НастройкиОбменаСправочников_ПоУмолчанию</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОбновлениеXMLОписаниеКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="ОбновлениеXMLОписаниеРасширеннаяПодсказка" id="105"/>
+						</LabelDecoration>
+						<InputField name="ПутьCustomSettingsDflt1" id="95">
+							<DataPath>ПутьCustomSettingsDflt</DataPath>
+							<TitleTextColor>#536AC2</TitleTextColor>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<TitleLocation>Top</TitleLocation>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПутьCustomSettingsDflt1КонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ПутьCustomSettingsDflt1РасширеннаяПодсказка" id="97"/>
+							<Events>
+								<Event name="StartChoice">ПутьCustomSettingsDfltНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="ОбновитьCustomSettingsDflt" id="98">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбновитьCustomSettingsDflt</CommandName>
+							<ExtendedTooltip name="ОбновитьCustomSettingsDfltРасширеннаяПодсказка" id="99"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КлеверенсТСД_ОсновнаяОбработка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИменаНастроек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имена настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Использовать" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяТиповой" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя типовой</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяПользовательской" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользовательской</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КаталогФайлов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьCustomSettings" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользовательский файл CustomSettings.xml</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьCustomSettingsDflt" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типовой файл CustomSettings.dflt.xml</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УдалятьИзИсточника" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалять из источника</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПереносНастроекВПользовательские" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать настройки пользовательскими</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переносит типовые настройки в пользовательские. Делает настройки пользовательскими.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереносНастроекВПользовательские</Action>
+		</Command>
+		<Command name="ПереносНастроекВТиповые" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать настройки типовыми</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переносит пользовательские настройки в типовые. Делает настройки типовыми.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереносНастроекВТиповые</Action>
+		</Command>
+		<Command name="ПроверитьФайлыНастроек" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить файлы настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить файлы настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьФайлыНастроек</Action>
+		</Command>
+		<Command name="ОбновитьCustomSettingsDflt" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить CustomSettings.dflt.xml</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить custom settings dflt</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьCustomSettingsDflt</Action>
+		</Command>
+		<Command name="СнятьВсе" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remove everything</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлығын алып тастаңыз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hammasini olib tashlang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Зняць усе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ამოიღეთ ყველაფერი</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Her şeyi kaldır</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Eliminar todo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Eliminați totul</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Remove everything</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлығын алып тастаңыз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hammasini olib tashlang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Зняць усе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Зняти все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>ამოიღეთ ყველაფერი</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Her şeyi kaldır</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Eliminar todo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Eliminați totul</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыбратьВсе" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Select all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлығын таңдаңыз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hammasini tanlang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Выбраць усе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вибрати все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>აირჩიეთ ყველა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümünü Seç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Seleccionar todo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Selectați toate</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Select all</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>kk</v8:lang>
+					<v8:content>Барлығын таңдаңыз</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uz</v8:lang>
+					<v8:content>Hammasini tanlang</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>be</v8:lang>
+					<v8:content>Выбраць усе</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>uk</v8:lang>
+					<v8:content>Вибрати все</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ka</v8:lang>
+					<v8:content>აირჩიეთ ყველა</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Tümünü Seç</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>es</v8:lang>
+					<v8:content>Seleccionar todo</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ro</v8:lang>
+					<v8:content>Selectați toate</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьВсе</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
