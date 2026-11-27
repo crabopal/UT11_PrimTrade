@@ -6853,6 +6853,7 @@
 			<CommonModule>ЭтапыОплатыСервер</CommonModule>
 			<CommonModule>ЭтапыОплатыСерверЛокализация</CommonModule>
 			<CommonModule>ЯндексПереводчик</CommonModule>
+			<CommonModule>бит_ДоработкиКонтрагентовЭДО</CommonModule>
 			<CommonAttribute>КомментарийЯзык1</CommonAttribute>
 			<CommonAttribute>КомментарийЯзык2</CommonAttribute>
 			<CommonAttribute>НаименованиеЯзык1</CommonAttribute>
@@ -12941,7 +12942,7 @@
 			<DataProcessor>СравнениеТекстов</DataProcessor>
 			<DataProcessor>СчетНаОплатуРаспознаваниеДокументов</DataProcessor>
 			<DataProcessor>ТекущиеДела</DataProcessor>
-			<DataProcessor>ТестДоработокЭДО</DataProcessor>
+			<DataProcessor>бит_ТестДоработокЭДО</DataProcessor>
 			<DataProcessor>ТестированиеОперацийЗакрытийМесяца</DataProcessor>
 			<DataProcessor>ТоварыНаКонтролеКачества</DataProcessor>
 			<DataProcessor>ТОРГ12РаспознаваниеДокументов</DataProcessor>
