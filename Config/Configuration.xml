@@ -12942,7 +12942,6 @@
 			<DataProcessor>СравнениеТекстов</DataProcessor>
 			<DataProcessor>СчетНаОплатуРаспознаваниеДокументов</DataProcessor>
 			<DataProcessor>ТекущиеДела</DataProcessor>
-			<DataProcessor>бит_ТестДоработокЭДО</DataProcessor>
 			<DataProcessor>ТестированиеОперацийЗакрытийМесяца</DataProcessor>
 			<DataProcessor>ТоварыНаКонтролеКачества</DataProcessor>
 			<DataProcessor>ТОРГ12РаспознаваниеДокументов</DataProcessor>
